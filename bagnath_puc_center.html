@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bagnath PUC Center | PUC & Insurance</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #17202a;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      border-bottom: 1px solid #e8ecef;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 1050px;
+      margin: auto;
+      padding: 18px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand { font-weight: 800; font-size: 1.1rem; }
+    .brand span { color: #147a5b; }
+    .nav a {
+      text-decoration: none;
+      color: #17202a;
+      margin-left: 22px;
+      font-size: .95rem;
+    }
+    .hero {
+      max-width: 1050px;
+      margin: auto;
+      padding: 90px 22px 75px;
+      text-align: center;
+    }
+    .eyebrow {
+      color: #147a5b;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: .82rem;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: clamp(2.3rem, 7vw, 4.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #66717a;
+      font-size: 1.08rem;
+    }
+    .buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid #147a5b;
+    }
+    .primary { background: #147a5b; color: white; }
+    .secondary { color: #147a5b; background: white; }
+    section { padding: 70px 22px; }
+    .container { max-width: 1050px; margin: auto; }
+    .light { background: #f7f9f8; }
+    h2 { font-size: 2rem; margin-bottom: 10px; letter-spacing: -.02em; }
+    .section-intro { color: #68737b; margin-bottom: 30px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .card {
+      border: 1px solid #e3e8e5;
+      border-radius: 12px;
+      padding: 25px;
+      background: white;
+    }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: #68737b; font-size: .95rem; }
+    .trust {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .trust div {
+      padding: 18px;
+      border-radius: 10px;
+      background: white;
+      border: 1px solid #e3e8e5;
+      font-weight: 600;
+      text-align: center;
+    }
+    .contact {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 35px;
+      align-items: start;
+    }
+    .contact-box {
+      border: 1px solid #e3e8e5;
+      border-radius: 12px;
+      padding: 25px;
+    }
+    .contact-box p { margin: 9px 0; color: #59656d; }
+    footer {
+      padding: 28px 22px;
+      border-top: 1px solid #e8ecef;
+      color: #78838a;
+      text-align: center;
+      font-size: .9rem;
+    }
+    @media (max-width: 750px) {
+      .nav a { display: none; }
+      .hero { padding-top: 65px; }
+      .cards, .trust, .contact { grid-template-columns: 1fr; }
+      section { padding: 55px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">Bagnath <span>PUC Center</span></div>
+      <div>
+        <a href="#services">Services</a>
+        <a href="#about">Why Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">Bagnath PUC Center</div>
+      <h1>Keep your vehicle<br>ready for the road.</h1>
+      <p>Quick and convenient PUC and vehicle insurance services, with helpful assistance when you need it.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#contact">Visit Our Center</a>
+        <a class="btn secondary" href="#services">View Services</a>
+      </div>
+    </section>
+
+    <section id="services" class="light">
+      <div class="container">
+        <h2>Our Services</h2>
+        <p class="section-intro">Simple vehicle documentation and insurance assistance in one place.</p>
+        <div class="cards">
+          <div class="card">
+            <h3>PUC Certificate</h3>
+            <p>Get your vehicle's Pollution Under Control certificate conveniently.</p>
+          </div>
+          <div class="card">
+            <h3>Vehicle Insurance</h3>
+            <p>Insurance consultation and assistance for your vehicle.</p>
+          </div>
+          <div class="card">
+            <h3>Insurance Renewal</h3>
+            <p>Need to renew your policy? Visit us for assistance with the process.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>Why visit Bagnath PUC Center?</h2>
+        <p class="section-intro">We aim to make essential vehicle services straightforward and convenient.</p>
+        <div class="trust">
+          <div>Quick Service</div>
+          <div>Helpful Assistance</div>
+          <div>Easy Process</div>
+          <div>Customer Focused</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light">
+      <div class="container">
+        <div class="contact">
+          <div>
+            <div class="eyebrow">Insurance Consultant</div>
+            <h2>Prem Chandra Tewari</h2>
+            <p class="section-intro">6 Star Insurance Consultance</p>
+            <p>For PUC and insurance-related assistance, visit Bagnath PUC Center during our working hours.</p>
+          </div>
+          <div class="contact-box" id="contact">
+            <h3>Visit Us</h3>
+            <p><strong>Opening Hours:</strong> 10:00 AM – 5:00 PM</p>
+            <p><strong>Break:</strong> To be updated</p>
+            <p><strong>Mobile:</strong> <a href="tel:+919719579398">9719579398</a></p>
+            <p><strong>Address:</strong> Kapkot Road, Bageshwar, Uttarakhand – 263642</p>
+            <div class="buttons" style="justify-content:flex-start;margin-top:18px">
+              <a class="btn primary" href="tel:+919719579398">Call 9719579398</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Bagnath PUC Center · Prem Chandra Tewari · 6 Star Insurance Consultance
+  </footer>
+</body>
+</html>
